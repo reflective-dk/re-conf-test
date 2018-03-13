@@ -1,0 +1,14 @@
+---
+id: f4253f1d-3930-45f7-baad-62e8442efba6
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 66d33a37-f73c-4723-8dca-5feb9cf420e4, name: Person }
+          # Responsible actor - actor: { id: actor.id }
+          cprNr: 0402456789
+          givenName: Quartus
+          familyName: Maximus
+          phone: 44444444
+          email: quartus@maximus.it
+...

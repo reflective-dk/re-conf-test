@@ -1,0 +1,12 @@
+---
+id: b82e2b6a-add4-40a5-bfa6-b3977336ccb4
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 5cad9972-6560-4136-a9d5-40c2d109be9b, name: Unit }
+          foreignId: forvaltning1
+          name: Forvaltning 1
+          parent: {id: 48502d51-e014-40b8-91b6-feb822171820}
+          owner: {id: fdb25c9f-78cc-588c-a334-eba78f2aabac}
+...

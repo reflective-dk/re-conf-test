@@ -1,0 +1,44 @@
+{
+  "name": "re-conf-test",
+  "version": "1.0.0",
+  "description": "Configuration objects for test data",
+  "main": "index.js",
+  "scripts": {
+    "tenant": "re tenant -r; re tenant -t",
+    "context": "re context -r; re context -d test -c conf -e 054f1f9a-b1bb-46cd-a691-8e390ca9de04",
+    "predeploy": "npm run build",
+    "deploy": "npm run context; npm run create",
+    "postdeploy": "sleep 1; npm run validate; npm run showvalidations",
+    "drop": "re drop -c conf | jq '.'; re drop -e 054f1f9a-b1bb-46cd-a691-8e390ca9de04 | jq '.'",
+    "create": "cat build/objects.json | jq '.objects[].type = \"application/json\"' | re add -j - | jq '.objects | .[].id'",
+    "validate": "re affected | re validate -j - > build/validation-results.json",
+    "merge": "re merge -e 054f1f9a-b1bb-46cd-a691-8e390ca9de04 | jq '.'",
+    "showvalidations": "npm run showvalidationlist; npm run showvalidationresult",
+    "showvalidationlist": "cat build/validation-results.json | jq -c '.objects | .[].registrations[0].validity[0].input | { subjectId: .subject.id, subjectClass: (.subjectClass.id + \" (\" +.subjectClass.name + \")\"), severity: .severity, validations: .validations }'",
+    "showvalidationresult": "cat build/validation-results.json | jq '.objects | [ .[].registrations[0].validity[0].input.validations | .[].severity ] | unique | if (. == [ \"none\" ]) then \"=== validation ok ===\" else \"=== VALIDATION FAILED: \" + (. | tostring) + \" ===\"end'",
+    "prebuild": "npm run clean; mkdir ./build",
+    "build": "./scripts/build-objects.js",
+    "clean": "rm -Rf ./build",
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/reflective-dk/re-conf-test.git"
+  },
+  "keywords": [
+    "reflective",
+    "configuration",
+    "test"
+  ],
+  "author": "Reflective Code <code@reflective.dk>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "re-models": "git+ssh://git@github.com/reflective-dk/re-models.git",
+    "re-conf-util": "git+ssh://git@github.com/reflective-dk/re-conf-util.git"
+  },
+  "devDependencies": {
+    "re-core-cli": "git+ssh://git@github.com:reflective-dk/re-core-cli.git",
+    "shelljs": "^0.8.1"
+  }
+}
