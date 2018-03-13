@@ -8,5 +8,6 @@ registrations:
           # Responsible actor - actor: { id: actor.id }
           foreignId: user1
           username: user1
-          employments: 0: {id: 5aec9004-37a9-4b24-bfec-1209b707d087}
+          employments:
+            0: {id: 5aec9004-37a9-4b24-bfec-1209b707d087}
 ...
