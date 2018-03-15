@@ -1,0 +1,13 @@
+---
+id: 02897b1f-2e52-4f85-b69d-2ccb6d6ec4d8
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf, name: user-account }
+          # Responsible actor - actor: { id: actor.id }
+          foreignId: demo
+          username: demo
+          salt: 9482c226-c17f-4b52-85a2-a0e562a3793f
+          hash: 1fb039a8f9abc4b59096bd523a7ed60d98df5ebef96ccd2591a87802ba6623a7cad13f5155a8ca09157ff22df709f06c23e5286f9c4a02afc5c4419c541c0699
+...

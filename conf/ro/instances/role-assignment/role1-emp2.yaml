@@ -7,8 +7,8 @@ registrations:
           class: { id: 025dfd36-f7a6-41e3-aa0c-64fe0376d3b7, name: role-assignment }
           # Responsible actor - actor: { id: actor.id }
           foreignId: role1-emp1
-          role: {id: 910b5480-71b1-4b57-a713-6c7dfa6566d1 }
+          role: {id: 910b5480-71b1-4b57-a713-6c7dfa6566d1, name: Leder }
           responsibilities: faglig: {id: c73e8559-79fa-4498-b56c-460e6372626d}
-          employment: {id: 5aec9004-37a9-4b24-bfec-1209b707d087}
+          employment: {id: 5aec9004-37a9-4b24-bfec-1209b707d087, name: afdeling1}
           propagateFrom: {id: 710f80e1-11c4-4ac7-b6a6-085a6143e9e8, name: afdeling11}
 ...

@@ -1,6 +1,57 @@
 {
   "objects": [
     {
+      "id": "5aec9004-37a9-4b24-bfec-1209b707d087",
+      "mimeType": "application/vnd.reflective-dk.object+json",
+      "registrations": [
+        {
+          "validity": [
+            {
+              "input": {
+                "class": {
+                  "id": "06c495eb-fcef-4c09-996f-63fd2dfea427",
+                  "name": "Employment"
+                },
+                "employee": {
+                  "id": "fdb25c9f-78cc-588c-a334-eba78f2aabac"
+                },
+                "employedAt": {
+                  "id": "b82e2b6a-add4-40a5-bfa6-b3977336ccb4"
+                },
+                "workingAt": {
+                  "0": {
+                    "id": "710f80e1-11c4-4ac7-b6a6-085a6143e9e8"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "snapshot": {
+        "class": {
+          "id": "06c495eb-fcef-4c09-996f-63fd2dfea427",
+          "name": "Employment"
+        },
+        "employee": {
+          "id": "fdb25c9f-78cc-588c-a334-eba78f2aabac"
+        },
+        "employedAt": {
+          "id": "b82e2b6a-add4-40a5-bfa6-b3977336ccb4"
+        },
+        "workingAt": {
+          "0": {
+            "id": "710f80e1-11c4-4ac7-b6a6-085a6143e9e8"
+          }
+        }
+      },
+      "name": "5aec9004-37a9-4b24-bfec-1209b707d087",
+      "ref": {
+        "id": "5aec9004-37a9-4b24-bfec-1209b707d087",
+        "name": "5aec9004-37a9-4b24-bfec-1209b707d087"
+      }
+    },
+    {
       "id": "fdb25c9f-78cc-588c-a334-eba78f2aabac",
       "mimeType": "application/vnd.reflective-dk.object+json",
       "registrations": [
@@ -43,11 +94,12 @@
                   "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
                   "name": "Person"
                 },
+                "foreignId": "borger1",
                 "cprNr": "0102456789",
                 "givenName": "Primus",
                 "familyName": "Maximus",
                 "phone": 11111111,
-                "email": "secundus@maximus.it"
+                "email": "primus@maximus.it"
               }
             }
           ]
@@ -58,11 +110,12 @@
           "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
           "name": "Person"
         },
+        "foreignId": "borger1",
         "cprNr": "0102456789",
         "givenName": "Primus",
         "familyName": "Maximus",
         "phone": 11111111,
-        "email": "secundus@maximus.it"
+        "email": "primus@maximus.it"
       },
       "name": "fdb25c9f-78cc-588c-a334-eba78f2aabac",
       "ref": {
@@ -82,6 +135,7 @@
                   "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
                   "name": "Person"
                 },
+                "foreignId": "borger2",
                 "cprNr": "0202456789",
                 "givenName": "Secundus",
                 "familyName": "Maximus",
@@ -97,6 +151,7 @@
           "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
           "name": "Person"
         },
+        "foreignId": "borger2",
         "cprNr": "0202456789",
         "givenName": "Secundus",
         "familyName": "Maximus",
@@ -121,6 +176,7 @@
                   "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
                   "name": "Person"
                 },
+                "foreignId": "borger3",
                 "cprNr": "0302456789",
                 "givenName": "Tertius",
                 "familyName": "Maximus",
@@ -136,6 +192,7 @@
           "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
           "name": "Person"
         },
+        "foreignId": "borger3",
         "cprNr": "0302456789",
         "givenName": "Tertius",
         "familyName": "Maximus",
@@ -160,6 +217,7 @@
                   "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
                   "name": "Person"
                 },
+                "foreignId": "borger4",
                 "cprNr": "0402456789",
                 "givenName": "Quartus",
                 "familyName": "Maximus",
@@ -175,6 +233,7 @@
           "id": "66d33a37-f73c-4723-8dca-5feb9cf420e4",
           "name": "Person"
         },
+        "foreignId": "borger4",
         "cprNr": "0402456789",
         "givenName": "Quartus",
         "familyName": "Maximus",
@@ -185,6 +244,51 @@
       "ref": {
         "id": "f4253f1d-3930-45f7-baad-62e8442efba6",
         "name": "f4253f1d-3930-45f7-baad-62e8442efba6"
+      }
+    },
+    {
+      "id": "710f80e1-11c4-4ac7-b6a6-085a6143e9e8",
+      "mimeType": "application/vnd.reflective-dk.object+json",
+      "registrations": [
+        {
+          "validity": [
+            {
+              "input": {
+                "class": {
+                  "id": "8b0390d1-74b9-48a2-a4cf-406e934ea120",
+                  "name": "System Allocation"
+                },
+                "foreignId": "role1-ro",
+                "system": {
+                  "id": "3bb3bfa1-5a4c-45c8-9955-055270c069e3",
+                  "name": "Reflective Organisation"
+                },
+                "roleAssignment": {
+                  "id": "04488c6b-6eeb-47a7-9bb9-b803910c978c"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "snapshot": {
+        "class": {
+          "id": "8b0390d1-74b9-48a2-a4cf-406e934ea120",
+          "name": "System Allocation"
+        },
+        "foreignId": "role1-ro",
+        "system": {
+          "id": "3bb3bfa1-5a4c-45c8-9955-055270c069e3",
+          "name": "Reflective Organisation"
+        },
+        "roleAssignment": {
+          "id": "04488c6b-6eeb-47a7-9bb9-b803910c978c"
+        }
+      },
+      "name": "710f80e1-11c4-4ac7-b6a6-085a6143e9e8",
+      "ref": {
+        "id": "710f80e1-11c4-4ac7-b6a6-085a6143e9e8",
+        "name": "710f80e1-11c4-4ac7-b6a6-085a6143e9e8"
       }
     },
     {
@@ -496,6 +600,86 @@
       "ref": {
         "id": "48502d51-e014-40b8-91b6-feb822171820",
         "name": "Re Try"
+      }
+    },
+    {
+      "id": "02897b1f-2e52-4f85-b69d-2ccb6d6ec4d8",
+      "mimeType": "application/vnd.reflective-dk.object+json",
+      "registrations": [
+        {
+          "validity": [
+            {
+              "input": {
+                "class": {
+                  "id": "38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf",
+                  "name": "user-account"
+                },
+                "foreignId": "demo",
+                "username": "demo",
+                "salt": "9482c226-c17f-4b52-85a2-a0e562a3793f",
+                "hash": "1fb039a8f9abc4b59096bd523a7ed60d98df5ebef96ccd2591a87802ba6623a7cad13f5155a8ca09157ff22df709f06c23e5286f9c4a02afc5c4419c541c0699"
+              }
+            }
+          ]
+        }
+      ],
+      "snapshot": {
+        "class": {
+          "id": "38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf",
+          "name": "user-account"
+        },
+        "foreignId": "demo",
+        "username": "demo",
+        "salt": "9482c226-c17f-4b52-85a2-a0e562a3793f",
+        "hash": "1fb039a8f9abc4b59096bd523a7ed60d98df5ebef96ccd2591a87802ba6623a7cad13f5155a8ca09157ff22df709f06c23e5286f9c4a02afc5c4419c541c0699"
+      },
+      "name": "02897b1f-2e52-4f85-b69d-2ccb6d6ec4d8",
+      "ref": {
+        "id": "02897b1f-2e52-4f85-b69d-2ccb6d6ec4d8",
+        "name": "02897b1f-2e52-4f85-b69d-2ccb6d6ec4d8"
+      }
+    },
+    {
+      "id": "56b2ba41-9c5b-4bc2-863b-de6de8734c5a",
+      "mimeType": "application/vnd.reflective-dk.object+json",
+      "registrations": [
+        {
+          "validity": [
+            {
+              "input": {
+                "class": {
+                  "id": "38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf",
+                  "name": "user-account"
+                },
+                "foreignId": "user1",
+                "username": "user1",
+                "employments": {
+                  "0": {
+                    "id": "5aec9004-37a9-4b24-bfec-1209b707d087"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "snapshot": {
+        "class": {
+          "id": "38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf",
+          "name": "user-account"
+        },
+        "foreignId": "user1",
+        "username": "user1",
+        "employments": {
+          "0": {
+            "id": "5aec9004-37a9-4b24-bfec-1209b707d087"
+          }
+        }
+      },
+      "name": "56b2ba41-9c5b-4bc2-863b-de6de8734c5a",
+      "ref": {
+        "id": "56b2ba41-9c5b-4bc2-863b-de6de8734c5a",
+        "name": "56b2ba41-9c5b-4bc2-863b-de6de8734c5a"
       }
     }
   ]
