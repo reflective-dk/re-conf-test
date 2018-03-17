@@ -1,11 +1,11 @@
 ---
-id: 54f2cb34-e32a-4339-af81-dc0f4c3cda7d
+id: 8395c926-1719-423b-a4d1-e3784838fa8e
 mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: efec2048-b4f3-4ffd-a7ba-b6698d412bbc, name: Process }
-          foreignId: process1
+          foreignId: processx
           name: Process X
           userStartable: true,
           system: {id: c20f24f4-b3c5-4110-9a82-ff526d500249, name: OPUS}
