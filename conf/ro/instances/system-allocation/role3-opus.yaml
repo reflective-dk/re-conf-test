@@ -1,0 +1,11 @@
+---
+id: 5eb24555-0b0a-4a5c-aae0-820a5dd957b5
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 8b0390d1-74b9-48a2-a4cf-406e934ea120, name: system-allocation }
+          foreignId: role3-opus
+          system: {id: c20f24f4-b3c5-4110-9a82-ff526d500249, name: OPUS}
+          roleAssignment: {id: 69f83b53-8dcc-406d-9684-66341efe3d4f, name: role3-emp3}
+...

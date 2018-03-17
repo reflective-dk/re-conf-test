@@ -1,0 +1,15 @@
+---
+id: ab71fe89-a686-4549-98bf-a2375e5bcf68
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 025dfd36-f7a6-41e3-aa0c-64fe0376d3b7, name: role-assignment }
+          # Responsible actor - actor: { id: actor.id }
+          foreignId: role2-emp3
+          role: {id: 910b5480-71b1-4b57-a713-6c7dfa6566d1, name: Leder }
+          responsibilities:
+            faglig: {id: c73e8559-79fa-4498-b56c-460e6372626d}
+          employment: {id: 5a37bc80-68d5-45e6-b0c4-213fdc53d1eb}
+          propagateFrom: {id: 710f80e1-11c4-4ac7-b6a6-085a6143e9e8, name: afdeling11}
+...
