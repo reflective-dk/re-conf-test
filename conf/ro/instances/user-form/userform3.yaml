@@ -1,0 +1,9 @@
+---
+id: b547e565-d2df-4569-92bf-27bc201e2b67
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 6c54bdcc-691a-4190-8b50-4c5a6e4679dc, name: user-form }
+          responsibility: {id: c73e8559-79fa-4498-b56c-460e6372626d, name: faglig}
+...

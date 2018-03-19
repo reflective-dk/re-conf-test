@@ -11,4 +11,7 @@ registrations:
           system: {id: c20f24f4-b3c5-4110-9a82-ff526d500249, name: OPUS}
           roles:
             systemEjer: {id: 1a9a0e36-0992-493a-b03f-655f52795ff3}
+          userForms:
+            3: {id: b547e565-d2df-4569-92bf-27bc201e2b67, name: userform3}
+            4: {id: 9a5406f3-f562-4829-92b7-bc53a0efa113, name: userform4}
 ...
