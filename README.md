@@ -1,4 +1,4 @@
-## Configuration objects for Thisted ##
+## Configuration objects for testing ##
 
 This module contains configuration objects for Reflective test Kommune.
 
@@ -13,5 +13,5 @@ cd re-conf-test
 npm install
 ```
 
-Then look at the `scripts` section `package.json` to see how to build, use and
+Then look at the `scripts` section of `package.json` to see how to build, use and
 deploy the configuration.
