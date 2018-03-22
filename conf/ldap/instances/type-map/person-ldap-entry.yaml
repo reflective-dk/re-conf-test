@@ -1,0 +1,32 @@
+---
+id: ee3498d2-3afb-4b94-93ea-0e61db96edb0
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          # Responsible actor - actor: { id: actor.id }
+          class: { id: efefe41d-805b-478f-8e4d-841085cb7dfa, name: Type Map }
+          name: Person -> LDAP Entry
+          sourceType: { id: 66d33a37-f73c-4723-8dca-5feb9cf420e4, name: Person }
+          targetType: { id: cc15f5a8-c50a-4bfd-9313-9cbbde31d133, name: LDAP Entry }
+          query: { relatesTo: { class: 66d33a37-f73c-4723-8dca-5feb9cf420e4 } }
+          idSeed: aliases.dn
+          warmUps:
+            people: { relatesTo: { class: 66d33a37-f73c-4723-8dca-5feb9cf420e4 } }
+          mappings:
+            dn:
+              sourceAttribute: aliases.dn
+              targetAttribute: dn
+            name:
+              sourceAttribute: name
+              targetAttribute: name
+            displayName:
+              sourceAttribute: name
+              targetAttribute: attributes.displayName
+            givenName:
+              sourceAttribute: givenName
+              targetAttribute: attributes.givenName
+            familyName:
+              sourceAttribute: familyName
+              targetAttribute: attributes.sn
+...
