@@ -17,6 +17,12 @@ registrations:
             dn:
               sourceAttribute: aliases.dn
               targetAttribute: dn
+            objectClass:
+              sourceAttribute: name
+              targetAttribute: objectClass.user
+              transform:
+                type: constant
+                value: 'user'
             name:
               sourceAttribute: name
               targetAttribute: name
