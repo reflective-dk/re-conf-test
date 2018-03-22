@@ -7,9 +7,12 @@ registrations:
           class: { id: 66d33a37-f73c-4723-8dca-5feb9cf420e4, name: Person }
           # Responsible actor - actor: { id: actor.id }
           foreignId: borger3
+          name: Tertius Maximus
           cprNr: 0302456789
           givenName: Tertius
           familyName: Maximus
           phone: 33333333
           email: tertius@maximus.it
+          aliases:
+            dn: CN=Tertius Maximus
 ...

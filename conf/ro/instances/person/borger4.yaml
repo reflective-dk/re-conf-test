@@ -7,9 +7,12 @@ registrations:
           class: { id: 66d33a37-f73c-4723-8dca-5feb9cf420e4, name: Person }
           # Responsible actor - actor: { id: actor.id }
           foreignId: borger4
+          name: Quartus Maximus
           cprNr: 0402456789
           givenName: Quartus
           familyName: Maximus
           phone: 44444444
           email: quartus@maximus.it
+          aliases:
+            dn: CN=Quartus Maximus
 ...

@@ -6,10 +6,13 @@ registrations:
       - input:
           class: { id: 66d33a37-f73c-4723-8dca-5feb9cf420e4, name: Person }
           # Responsible actor - actor: { id: actor.id }
+          name: Secundus Maximus
           foreignId: borger2
           cprNr: 0202456789
           givenName: Secundus
           familyName: Maximus
           phone: 22222222
           email: secundus@maximus.it
+          aliases:
+            dn: CN=Secundus Maximus
 ...
