@@ -14,5 +14,5 @@ registrations:
           phone: 11111111
           email: primus@maximus.it
           aliases:
-            dn: CN=Primus Maximus
+            dn: CN=Primus Maximus,DC=reflective,DC=dk
 ...

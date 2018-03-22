@@ -14,5 +14,5 @@ registrations:
           phone: 22222222
           email: secundus@maximus.it
           aliases:
-            dn: CN=Secundus Maximus
+            dn: CN=Secundus Maximus,DC=reflective,DC=dk
 ...

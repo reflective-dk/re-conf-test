@@ -14,5 +14,5 @@ registrations:
           phone: 44444444
           email: quartus@maximus.it
           aliases:
-            dn: CN=Quartus Maximus
+            dn: CN=Quartus Maximus,DC=reflective,DC=dk
 ...

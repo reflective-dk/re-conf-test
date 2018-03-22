@@ -14,5 +14,5 @@ registrations:
           phone: 33333333
           email: tertius@maximus.it
           aliases:
-            dn: CN=Tertius Maximus
+            dn: CN=Tertius Maximus,DC=reflective,DC=dk
 ...
