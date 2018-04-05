@@ -1,0 +1,14 @@
+---
+  id: 2cf31e82-c339-43af-9322-a92714165dd2
+  registrations:
+    - validity:
+        - input:
+            class:
+              id: efec2048-b4f3-4ffd-a7ba-b6698d412bbc
+              name: Process
+            name: Active Directory Provision
+            userStartable: no
+            system:
+              id: 9374800d-1ba6-5a9e-ae4a-d6da16e7e9df
+            bpmn: { hash: active-directory-provision.bpmn }
+...
