@@ -1,0 +1,19 @@
+---
+id: 147ccbb7-600d-4a3a-b562-0dcd4dbcaad9
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 48c3b7b9-dc7a-42ae-9759-b65336f12b36, name: Extraction Spec }
+          # Responsible actor - actor: { id: actor.id }
+          name: Test AD Extraction Spec
+          tenant: { id: 7857db3f-1929-4100-86ea-a971369bd1a5, name: Test Tenant }
+          system: { id: b722c7ca-2461-4d85-95ac-acb577908266, name: Active Directory }
+          extraction:
+            person:
+              id: ee3498d2-3afb-4b94-93ea-0e61db96edb0
+              name: Person -> LDAP Entry
+          unstager:
+            id: 099ea939-309c-4ac9-a642-7de998871710
+            name: Test LDAP Unstager with explicit credentials
+...
