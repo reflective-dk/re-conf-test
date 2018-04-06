@@ -7,12 +7,11 @@
     "list-integrations": "list-integrations",
     "build": "build-objects",
     "clean": "rm -Rf ./build",
-    "deploy": "npm run upload; re add -j build/objects.json; npm run validate",
-    "upload": "if [ -d data ]; then find data -type f -exec binadd {} \\; ; fi",
-    "validate": "re validate -j build/objects.json > build/validation-results.json",
-    "postvalidate": "npm run showvalidationlist; npm run showvalidationresult",
-    "showvalidationlist": "cat build/validation-results.json | jq -c '.objects | .[].registrations[0].validity[0].input | { subjectId: .subject.id, subjectClass: (.subjectClass.id + \" (\" +.subjectClass.name + \")\"), severity: .severity, validations: .validations }'",
-    "showvalidationresult": "cat build/validation-results.json | jq '.objects | [ .[].registrations[0].validity[0].input.validations | .[].severity ] | unique | if (. == [ \"none\" ]) then \"=== validation ok ===\" else \"=== VALIDATION FAILED: \" + (. | tostring) + \" ===\"end'",
+    "predeploy": "npm run upload",
+    "deploy": "re add -j build/objects.json",
+    "postdeploy": "npm run validate",
+    "upload": "upload-data",
+    "validate": "validate-objects",
     "test": "mocha --recursive"
   },
   "repository": {
@@ -32,7 +31,6 @@
     "re-conf-util": "git+ssh://git@github.com/reflective-dk/re-conf-util.git"
   },
   "devDependencies": {
-    "re-core-cli": "git+ssh://git@github.com:reflective-dk/re-core-cli.git",
-    "shelljs": "^0.8.1"
+    "re-core-cli": "git+ssh://git@github.com:reflective-dk/re-core-cli.git"
   }
 }
