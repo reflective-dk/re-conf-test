@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.11.3">
+  <bpmn:collaboration id="Collaboration_11d6hwn">
+    <bpmn:participant id="Participant_1cmscbv" name="Administrator" processRef="busy" />
+  </bpmn:collaboration>
+  <bpmn:process id="busy" name="busy" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
+    <bpmn:startEvent id="activeDirectoryProvisionInitiated" name="Busy process initiated">
+      <bpmn:outgoing>SequenceFlow_127wjkd</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_127wjkd" sourceRef="activeDirectoryProvisionInitiated" targetRef="busyTask" />
+    <bpmn:sequenceFlow id="SequenceFlow_03lp1t5" sourceRef="busyTask" targetRef="EndEvent_0718vr8" />
+    <bpmn:endEvent id="EndEvent_0718vr8" name="completed">
+      <bpmn:incoming>SequenceFlow_03lp1t5</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="busyTask" name="busy task">
+      <bpmn:incoming>SequenceFlow_127wjkd</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_03lp1t5</bpmn:outgoing>
+    </bpmn:userTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_11d6hwn">
+      <bpmndi:BPMNShape id="Participant_1cmscbv_di" bpmnElement="Participant_1cmscbv">
+        <dc:Bounds x="123" y="82" width="1190" height="372" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="activeDirectoryProvisionInitiated">
+        <dc:Bounds x="202" y="164" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="178" y="213" width="84" height="24" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_127wjkd_di" bpmnElement="SequenceFlow_127wjkd">
+        <di:waypoint xsi:type="dc:Point" x="238" y="182" />
+        <di:waypoint xsi:type="dc:Point" x="640" y="182" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="394" y="167" width="90" height="0" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_03lp1t5_di" bpmnElement="SequenceFlow_03lp1t5">
+        <di:waypoint xsi:type="dc:Point" x="740" y="182" />
+        <di:waypoint xsi:type="dc:Point" x="1237" y="182" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="943.5" y="167" width="90" height="0" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0718vr8_di" bpmnElement="EndEvent_0718vr8">
+        <dc:Bounds x="1237" y="164" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1230" y="214" width="50" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_1gxnjtl_di" bpmnElement="busyTask">
+        <dc:Bounds x="640" y="142" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
