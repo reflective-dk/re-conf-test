@@ -15,4 +15,6 @@ registrations:
             displayName: displayName
             givenName: givenName
             sn: sn
+          searchString: dc=reflective,dc=dk
+          filterString: (objectClass=user)
 ...
