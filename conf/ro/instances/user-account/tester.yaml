@@ -1,0 +1,14 @@
+---
+id: 7682cade-642c-402c-99cc-79f85bdd5b88
+mimeType: application/vnd.reflective-dk.object+json
+registrations:
+  - validity:
+      - input:
+          class: { id: 38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf, name: user-account }
+          # Responsible actor - actor: { id: actor.id }
+          foreignId: demo
+          username: demo
+          name: tester_reconnect@reflective.dk
+          salt: f638e148-1200-4368-9214-6fc10c006566
+          hash: 554efe4873f1041e4efba4e73916b708cd1c686da4621d8c38d70d1a98b6a2eb10be6a40185b610af608361da77687319931b4ce394a6b4dd9e5a6360c23bda3
+...
