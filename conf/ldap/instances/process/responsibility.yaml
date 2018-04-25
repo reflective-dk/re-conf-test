@@ -1,0 +1,14 @@
+---
+  id: 69a57b32-65b6-4a22-ab8c-013a1dbafb2c
+  registrations:
+    - validity:
+        - input:
+            class:
+              id: efec2048-b4f3-4ffd-a7ba-b6698d412bbc
+              name: Process
+            name: Responsibility
+            userStartable: false
+            system:
+              id: 9374800d-1ba6-5a9e-ae4a-d6da16e7e9df
+            bpmn: { hash: responsibility.bpmn }
+...
