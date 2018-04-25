@@ -10,7 +10,6 @@
           <bpmn:lane id="Lane_0magtol" name="personale ansvar">
             <bpmn:extensionElements>
               <camunda:properties>
-                <!-- personale ansvar -->
                 <camunda:property name="responsibility" value="c73e8559-79fa-4498-b56c-460e6372626d" />
               </camunda:properties>
             </bpmn:extensionElements>
@@ -29,7 +28,6 @@
           <bpmn:lane id="Lane_1vz03wi" name="data ansvar">
             <bpmn:extensionElements>
               <camunda:properties>
-                <!-- data ansvar -->
                 <camunda:property name="responsibility" value="8ccb70b9-da30-402f-9ee1-333a707c2d58" />
               </camunda:properties>
             </bpmn:extensionElements>
@@ -41,7 +39,7 @@
     <bpmn:startEvent id="activeDirectoryProvisionInitiated" name="Ansættelse skal effektueres">
       <bpmn:outgoing>SequenceFlow_127wjkd</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:userTask id="Task_09yvu2e" name="Check afhængige opgaver udføres">
+    <bpmn:userTask id="Task_09yvu2e" name="Check afhængige opgaver udføres" camunda:assignee="auto">
       <bpmn:incoming>SequenceFlow_16cq6by</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1tjoyal</bpmn:outgoing>
     </bpmn:userTask>
