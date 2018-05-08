@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.11.3">
   <bpmn:collaboration id="Collaboration_11d6hwn">
-    <bpmn:participant id="Participant_1cmscbv" name="responsibility" processRef="responsibility" />
+    <bpmn:participant id="Participant_1cmscbv" name="responsibility" processRef="Rresponsibility" />
   </bpmn:collaboration>
-  <bpmn:process id="responsibility" name="responsibility" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
+  <bpmn:process id="Rresponsibility" name="responsibility" isExecutable="true" camunda:versionTag="1.0" camunda:taskPriority="1">
     <bpmn:laneSet>
       <bpmn:lane id="Lane_0n98bim" name="Leder">
         <bpmn:childLaneSet xsi:type="bpmn:tLaneSet">
