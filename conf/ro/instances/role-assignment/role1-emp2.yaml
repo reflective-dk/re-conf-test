@@ -6,7 +6,6 @@ registrations:
       - input:
           class: { id: 025dfd36-f7a6-41e3-aa0c-64fe0376d3b7, name: role-assignment }
           # Responsible actor - actor: { id: actor.id }
-          foreignId: role1-emp2
           role: {id: 910b5480-71b1-4b57-a713-6c7dfa6566d1, name: Leder }
           responsibilities:
             faglig: {id: c73e8559-79fa-4498-b56c-460e6372626d}

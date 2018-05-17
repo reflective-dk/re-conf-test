@@ -5,9 +5,8 @@ registrations:
   - validity:
       - input:
           class: { id: efec2048-b4f3-4ffd-a7ba-b6698d412bbc, name: Process }
-          foreignId: process3
           name: Process 3
-          userStartable: true,
+          userStartable: true
           system: {id: c20f24f4-b3c5-4110-9a82-ff526d500249, name: OPUS}
           roles:
             systemEjer: {id: 1a9a0e36-0992-493a-b03f-655f52795ff3}

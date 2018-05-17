@@ -6,7 +6,6 @@ registrations:
       - input:
           class: { id: 38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf, name: user-account }
           # Responsible actor - actor: { id: actor.id }
-          foreignId: demo
           username: demo
           name: tester_reconnect@reflective.dk
           salt: f638e148-1200-4368-9214-6fc10c006566

@@ -5,7 +5,6 @@ registrations:
   - validity:
       - input:
           class: { id: 8b0390d1-74b9-48a2-a4cf-406e934ea120, name: system-allocation }
-          foreignId: role1-ro
           system: {id: 3bb3bfa1-5a4c-45c8-9955-055270c069e3, name: Reflective Organisation}
           roleAssignment: {id: 04488c6b-6eeb-47a7-9bb9-b803910c978c, name: role1-emp2}
 ...

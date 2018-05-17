@@ -5,7 +5,6 @@ registrations:
   - validity:
       - input:
           class: { id: 5cad9972-6560-4136-a9d5-40c2d109be9b, name: Unit }
-          foreignId: afdeling12
           name: Afdeling 12
           parent: {id: b82e2b6a-add4-40a5-bfa6-b3977336ccb4}
           owner: {id: fdb25c9f-78cc-588c-a334-eba78f2aabac}
