@@ -9,7 +9,7 @@
     "clean": "rm -Rf ./build",
     "predeploy": "npm run upload",
     "deploy": "re add -j build/objects.json",
-    "postdeploy": "npm run validate",
+    "postdeploy": "sleep 5; npm run validate",
     "upload": "upload-data",
     "validate": "validate-objects",
     "test": "mocha --recursive"
