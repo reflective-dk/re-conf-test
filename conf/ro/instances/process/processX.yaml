@@ -12,4 +12,5 @@ registrations:
             leder: {id: 910b5480-71b1-4b57-a713-6c7dfa6566d1}
           responsibilities:
             faglig: {id: c73e8559-79fa-4498-b56c-460e6372626d}
+          bpmn: { hash: busy.bpmn }
 ...

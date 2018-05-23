@@ -14,4 +14,5 @@ registrations:
             faglig: {id: c73e8559-79fa-4498-b56c-460e6372626d}
           userForms:
             1: {id: 24482737-cfa9-4c94-838b-e7130653ec26, name: userform1}
+          bpmn: { hash: busy.bpmn }
 ...
