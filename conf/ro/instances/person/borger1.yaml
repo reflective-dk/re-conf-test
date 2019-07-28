@@ -1,11 +1,9 @@
 ---
 id: 42f060fc-f41c-4744-a9c3-11afe2988fb8
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: 66d33a37-f73c-4723-8dca-5feb9cf420e4, name: Person }
-          # Responsible actor - actor: { id: actor.id }
           name: Primus Maximus
           cprNr: '0102456789'
           givenName: Primus

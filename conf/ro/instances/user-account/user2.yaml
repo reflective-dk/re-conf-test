@@ -1,11 +1,9 @@
 ---
 id: 54c80410-48eb-476d-86d1-cd3800c99d70
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: 38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf, name: user-account }
-          # Responsible actor - actor: { id: actor.id }
           username: user2
           employments:
             0: {id: fd8a33ff-469e-4e2d-823f-3087f8199a42}

@@ -1,11 +1,9 @@
 ---
 id: 7682cade-642c-402c-99cc-79f85bdd5b88
-mimeType: application/vnd.reflective-dk.object+json
 registrations:
   - validity:
       - input:
           class: { id: 38df45c2-f4e2-4ffd-b91f-bc509ce8bcbf, name: user-account }
-          # Responsible actor - actor: { id: actor.id }
           username: demo
           name: tester_reconnect@reflective.dk
           salt: f638e148-1200-4368-9214-6fc10c006566
