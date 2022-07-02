@@ -1,0 +1,31 @@
+---
+id: 82bf6024-c347-45fe-924b-26f40211c3b9
+registrations:
+  - validity:
+      - input:
+          class:
+            id: b4b4c29e-3956-434d-8b1e-97914ae6de55
+            name: User Task
+          name: Vedligehold
+          validity: dirty
+          bundle:
+            addresses:
+              type: query
+              query:
+                relatesTo:
+                  class: 6ec80fc8-4ba4-49e2-88bf-e31032cca129
+          serialization:
+            addressValues:
+              view: view
+              id: address-admin-id
+              expectMany: true
+          submitButtonLabel: Udfør
+          showProcessDetails: false
+          controller:
+            hash: ro-address-admin-ctrl.js
+          views:
+            view:
+              id: e66ec0bb-4ad4-47f4-95d5-c94da66dae8f
+              name: Address Admin View
+        from: 2005-01-01T00:00:00.000Z
+...
